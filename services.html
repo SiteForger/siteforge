@@ -1,0 +1,237 @@
+<html lang="en">
+<head>
+  <style>
+    @font-face { font-family: Poppins-SemiBold; src: url('Poppins-SemiBold.ttf'); } 
+    body {
+      justify-content: center;
+      align-items: center;
+      margin: 0px;
+      text-align: center;
+      font-family: monospace;
+      background-color: rgb(42,42,55);
+      
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    p {
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    #div {
+
+      border: 2px solid #948bfc;
+      animation: glow 1s infinite alternate;
+      padding-top: 30px;
+      margin: 0 auto;
+      background-color: rgb(63, 63, 83);
+      border-radius: 20px;
+      margin-bottom: 20px;
+      overflow: auto;
+      width: 90%;  /* Use percentage to make it responsive */
+      max-width: 1200px;  /* Limit the maximum width */
+    }
+
+    /* Navbar Styling */
+    .navbar {
+      margin-bottom: 0px;
+      position: sticky;
+      top: 0;
+      background-color: #948bfc;
+      padding: 10px;
+      color: white;
+      text-align: center;
+    }
+
+    .navbar a {
+      color: white;
+      padding: 14px 20px;
+      text-decoration: none;
+    }
+
+    .navbar a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+
+    /* Responsive Product Grid */
+    #product {
+      
+      border: 5px solid #948bfc;
+      animation: glow 1s infinite alternate;
+      background-color: rgb(35, 35, 35);
+      height: auto;  /* Auto height to adjust as per content */
+      width: 30%;  /* Use percentage for responsive layout */
+      border-radius: 20px;
+      display: inline-block;
+      margin-bottom: 20px;
+      margin-left: 2%;  /* Small margin for space between products */
+      vertical-align: top;
+      min-height: 100%;
+      overflow: auto;
+      max-width: 100%;  /* Ensure max width is within limits */
+      padding: 2vw;  /* Add padding to scale with viewport */
+    }
+
+    .btn {
+      animation: fadeIn 2s ease-in-out;
+      background-color: #948bfc;
+      color: white;
+      padding: 2vw;
+      border-radius: 10px;
+      cursor: pointer;
+      border: none;
+      transition: transform 0.3s ease;
+      width: 90%;  /* Make button width responsive */
+      max-width: 500px;  /* Limit max width */
+      margin-top: 3vw;
+      font-family: monospace;
+      font-size: 2vw;  /* Scales with screen size */
+    }
+
+    .btn:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 15px 5px #948bfc;
+    }
+
+    purple {
+      color: #948bfc;
+    }
+
+    /* Contact Us Section */
+    #contactus {
+      background-color: rgb(77, 77, 105);
+      padding-top: 10px;
+      margin-bottom: 0;
+      border-radius: 0;
+      padding: 2vw;  /* Padding responsive to viewport */
+    }
+
+    .gradient-text {
+      font-size: 4vw;  /* Responsive font size */
+      font-weight: bold;
+      background: linear-gradient(45deg, #948bfc, #ff8d36);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      position: relative;
+      margin-top: 50px;
+      font-size: 30;
+      animation: rotateScale 2s infinite;
+    }
+
+
+@keyframes rotateScale {
+    0% {
+      transform: rotate(0deg) scale(1);
+    }
+    25% {
+      transform: rotate(15deg) scale(1.1);
+    }
+    50% {
+        transform: rotate(-15deg) scale(1.1);
+      }
+    100% {
+        transform: rotate(0deg) scale(1);
+      }
+  }
+
+    @keyframes glow {
+      from { border-color: '#948bfc'; }
+      to { border-color: #433d83; }
+    }
+
+    /* Responsive design for smaller screens */
+    @media (max-width: 768px) {
+      #product {
+        width: 45%;  /* Adjust product width for smaller screens */
+      }
+    }
+
+    @media (max-width: 480px) {
+      #product {
+        width: 90%;  /* Full width for mobile devices */
+        margin-left: 0;
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="navbar">
+    <a href="home.html">Home</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="services.html">Services</a>
+    <a href="contact.html">Contact</a>
+  </div>   
+  <p style="font-size: 50px; color: white;">Website Services:</p>
+  <p class="gradient-text">Limited Time Discount!</p>
+
+  <div id="product"> 
+    <p style="font-size: 5vw; color: white; margin-bottom: 20px;">£3/₦5k</p>
+    <p style="font-size: 2vw; color: white;">1 Page Customized Website (Non Interactive):
+    </p>
+    <p style="font-size: 1.2vw; color: #948bfc;">• Personalized Design: Receive a fully tailored, visually appealing one-page website that reflects your brand or personal style.
+      <br>
+      <br>
+      • Quick Turnaround: Get your website fast with a simple, clean layout optimized for mobile and desktop viewing.
+      <br>
+      <br>
+      • Cost-Effective Solution: Perfect for individuals or small businesses looking for an affordable online presence without complex features.</p>
+      <a href="contact.html"><button class="btn">Contact Us</button></a>
+  </div>
+  </div>
+
+  <div id="product"> 
+    <p style="font-size: 5vw; color: white; margin-bottom: 20px;">£5/₦7k</p>
+    <p style="font-size: 2vw; color: white;">1 Page Customized Website (Interactive):</p>
+    <p style="font-size: 1.2vw; color: #948bfc;">• Fully Customized Design: Get a unique, interactive one-page website tailored to your brand’s style and needs.
+      <br>
+      <br>
+      • Engaging User Experience: Includes interactive elements like buttons, animations, and hover effects to enhance user engagement.
+      <br>
+      <br>
+      • Responsive and Mobile-Friendly: Designed to look great and function seamlessly across all devices.</p>
+      <a href="contact.html"><button class="btn">Contact Us</button></a>
+  </div>
+
+  <div id="product"> 
+    <p style="font-size: 5vw; color: white; margin-bottom: 20px;">£10/₦15k</p>
+    <p style="font-size: 2vw; color: white;">Basic Customized Website:</p>
+    <p style="font-size: 1.2vw; color: #948bfc;">• Multi-Page Custom Design: A tailored 3-page interactive website designed to match your brand’s identity and vision.
+      <br>
+      <br>
+      • Interactive Features on Every Page: Engaging elements such as forms, animations, and dynamic content for an enhanced user experience.
+      <br>
+      <br>
+      • SEO-Friendly and Fully Responsive: Optimized for search engines and compatible across all devices for a seamless browsing experience.</p>
+      <a href="contact.html"><button class="btn">Contact Us</button></a>
+  </div>
+  </div>
+
+  <div id="product"> 
+    <p style="font-size: 5vw; color: white; margin-bottom: 20px;">£20/₦35k</p>
+    <p style="font-size: 2vw; color: white;">Advanced Interactive Website:</p>
+    <p style="font-size: 1.2vw; color: #948bfc;">• Comprehensive 5-Page Custom Website: Fully tailored multi-page design with unique layouts for each page, perfect for showcasing various services or products.
+      <br>
+      <br>
+      • Advanced Interactivity: Includes engaging features like interactive forms, animations, galleries, and user-friendly navigation to enhance visitor engagement.
+      <br>
+      <br>
+      • Optimized for Performance and SEO: Fast-loading, responsive design that works flawlessly on all devices, with built-in SEO optimization for better search engine visibility.</p>
+      <a href="contact.html"><button class="btn">Contact Us</button></a>
+  </div>
+  </div>
+
+  <div id="contactus">
+    <p style="color: white; text-align: center; font-size: 5vw;"><purple>Contact Us:</purple></p>
+    <p style="color: white; text-align: center;">WhatsApp: +44 7940 800479</p>
+    <p style="color: white; text-align: center;">Gmail: <purple>siteforger</purple>@gmail.com</p>
+  </div>
+
+</body>
+</html>
