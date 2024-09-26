@@ -13,6 +13,12 @@
       
     }
 
+    @media (max-width: 600px){
+      p{
+        font-size: 5vw;
+      }
+    }
+
     @keyframes fadeIn {
       from { opacity: 0; }
       to { opacity: 1; }
@@ -65,14 +71,12 @@
       border: 5px solid #948bfc;
       animation: glow 1s infinite alternate;
       background-color: rgb(35, 35, 35);
-      height: auto;  /* Auto height to adjust as per content */
       width: 30%;  /* Use percentage for responsive layout */
       border-radius: 20px;
       display: inline-block;
       margin-bottom: 20px;
       margin-left: 2%;  /* Small margin for space between products */
       vertical-align: top;
-      min-height: 100%;
       overflow: auto;
       max-width: 100%;  /* Ensure max width is within limits */
       padding: 2vw;  /* Add padding to scale with viewport */
